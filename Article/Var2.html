@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Koding Java untuk Pemula-Variable Part 2</title>
+    <!-- <link rel="stylesheet" href="style1.css" /> -->
+  </head>
+  <body>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 20px;
+      }
+
+      header {
+        position: relative;
+        background-color: #ca620f;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        /* background-image: url('images/cover.jpg'); Tambah gambar cover
+    background-size: 1225px 400px;
+    background-repeat: no-repeat; */
+        height: 300px; /* Atur tinggi header sesuai kebutuhan */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden;
+      }
+
+      article {
+        background-color: white;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        font-size: 37px;
+      }
+
+      h2 {
+        color: #4caf50;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 5px;
+        font-size: 24px;
+      }
+
+      h3 {
+        color: #4caf50;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        font-size: 22px;
+      }
+
+      p {
+        line-height: 1.6;
+        margin-bottom: 15px;
+        font-size: 18px;
+      }
+
+      ul {
+        line-height: 1.6;
+        margin-bottom: 15px;
+        padding-left: 20px;
+        font-size: 16px;
+      }
+
+      ol {
+        line-height: 1.6;
+        margin-bottom: 15px;
+        font-size: 17px;
+      }
+
+      span {
+        color: #ca620f;
+      }
+
+      code {
+        background-color: #f4f4f4;
+        padding: 2px 5px;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 16px;
+      }
+
+      pre {
+        background-color: #f4f4f4;
+        padding: 10px;
+        border-radius: 5px;
+        overflow-x: auto;
+        font-size: 20px;
+      }
+
+      .img-code {
+        max-width: 100%;
+        height: auto;
+        margin: 20px 0;
+      }
+
+      table,
+      th {
+        margin: auto;
+        border: 1px solid black;
+        text-align: center;
+        vertical-align: middle;
+        
+      }
+      td {
+        border: 1px solid black;
+        text-align: center;
+        vertical-align: middle;
+        font-size: small;
+      }
+
+      .table-1 {
+        margin: auto;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 20px;
+        color: #777;
+      }
+    </style>
+    <header>
+      <img src="images/logo.png" alt="Logo" class="logo" />
+      <h1>
+        Koding Java untuk Pemula <br />
+        3. Variable-Part 2
+      </h1>
+    </header>
+
+    <article>
+      <h2>Halo teman-teman</h2>
+      <p>
+        Nah setelah kita mempelajari bagaimana mendeklarasikan suatu variable, menentukan tipe variable dan menentukan nilai dari variable tersebut, mari kita pelajari, apa yang bisa kita lakukan dengan variable-variable tersebut. Seperti
+        sudah dibahas sebelumnya, kita bisa melakukan assignment terhadap suatu variable untuk menentukan atau mengubah nilai dari variable tersebut. Selain assignment, kita juga bisa melakukan operasi lain terhadap suatu variable,
+        bergantung pada tipe dari variable tersebut.
+      </p>
+      <h2>Variable bertipe bilangan</h2>
+      <p>
+        Untuk variable bertipe bilangan, kita bisa melakukan operasi aritmatika seperti penjumlahan, pengurangan, perkalian, pembagian dan modulo. Di Java dan juga mayoritas bahasa pemrograman, berikut ini adalah simbol operasi aritmatika
+        yang umum digunakan:
+      </p>
+      <table width="50%" height="auto" font-color="#7ed6df">
+        <tr>
+          <th><b>Simbol Aritmatika</b></th>
+          <th><b>Fungsi</b></th>
+        </tr>
+        <tr>
+          <td>+</td>
+          <td>Penjumlahan</td>
+        </tr>
+        <tr>
+          <td>-</td>
+          <td>Pengurangan</td>
+        </tr>
+        <tr>
+          <td>*</td>
+          <td>Perkalian</td>
+        </tr>
+        <tr>
+          <td>/</td>
+          <td>Pembagian</td>
+        </tr>
+        <tr>
+          <td>%</td>
+          <td>Modulo(Menghitung sisa pembagian)</td>
+        </tr>
+      </table>
+
+      <p>
+        Simbol plus berfungsi sebagai penjumlahan, simbol minus berfungsi sebagai pengurangan, lalu simbol star atau bintang berfungsi sebagai perkalian, simbol slash atau garis miring berfungsi sebagai pembagian, dan simbol persen
+        berfungsi sebagai modulo atau menghitung sisa pembagian.
+      </p>
+      <p>Contoh penggunaan simbol aritmatika pada program Java:</p>
+      <img src="Images/0.png" alt="" class="img-code" />
+
+      <p>Statement di dalam block-then akan dieksekusi jika kondisi bernilai true, sedangkan statement di dalam block-else akan dieksekusi saat kondisi bernilai false.</p>
+      <p>Lihat contoh if-then-else di program Java berikut ini:</p>
+      <img src="images/1 (1) - Salin.png" alt="" class="img-code" />
+      <p>
+        Variable var1 berfungsi menyimpan hasil dari penjumlahan angka 1 dan 2, yang nantinya memberikan nilai 3. Selanjutnya variable var2 digunakan untuk menyimpan hasil pengurangan angka 9 dikurangi 4 , yang menghasilkan nilai 5. Lalu
+        variable var3 menghitung hasil perkalian dari angka 15 dikali 3, dengan hasil akhirng 45. Dan variable var4 menyimpan hasil pembagian angka 15 dengan 3, yang menghasilkan nilai 5.
+      </p>
+      <p>
+        Sama dengan matematika umum, operasi di dalam kurung akan dieksekusi terlebih dahulu. Di line 8, var6 akan menghasilkan nilai 1 karena sisa pembagian dari 16 dibagi 3 adalah 1. Di line 9, kita menggunakan bilangan negatif dalam
+        operasi aritmetika kita.
+      </p>
+
+      <p>Selain angka, kita juga bisa menggunakan variable di dalam perhitungan kita. Contoh:</p>
+      <pre><code>
+        int a = 5;
+        int b = 7;
+	int c = a + b;
+
+        System.out.println(c);</code></pre>
+      <img src="images/2.png" alt="" class="img-code" />
+
+      <p>Kita menjumlahkan nilai a dan b dan menyimpan hasil penjumlahan di c. Karena a bernilai 5 dan b bernilai 7, maka c akan bernilai 12. Proses ini mirip dengan proses matematika yang umum kita gunakan.</p>
+
+      <p>
+        Selain operasi aritmatika, di banyak bahasa pemrograman termasuk Java, disediakan mekanisme untuk menambah nilai variable dengan 1 yang disebut increment dengan menggunakan simbol ++ dan juga mengurangi nilai variable dengan 1 yang
+        disebut decrement menggunakan simbol --. Berikut ini contoh dari proses increment:
+      </p>
+      <img src="Images/1.png" alt="" class="img-code" />
+
+      <p>Di line 4, kita melakukan increment terhadap variable a dengan menambahkan kode ++ di belakang variable a. Dengan kode seperti ini, nilai a akan ditambah dengan 1 sehingga nilai a akan menjadi 2.</p>
+      <p>Demikian pula sebaliknya, kita bisa melakukan proses decrement dengan menambahkan tanda -- di belakang variable a, seperti contoh berikut ini:</p>
+      <img src="images/2.png" alt="" class="img-code" />
+
+      <p>Kita bisa juga langsung melakukan proses increment / decrement dan assignment secara langsung seperti contoh berikut ini:</p>
+      <img src="images/3.png" alt="" class="img-code" />
+      <p>
+        Di sini, kita melakukan increment terhadap a dan melakukan assignment terhadap nilai a ke variable b. Akan tetapi, apa yang akan kita dapatkan? Variable a berubah nilainya menjadi 2 sedangkan variable b nilainya tetap 1. Mengapa
+        terjadi demikian? Hal ini terjadi karena nilai variable a di-assign ke variable b sebelum proses increment dilakukan. Lalu akan muncul pertanyaan, bagaimana caranya jika kita ingin melakukan increment terlebih dahulu sebelum kita
+        melakukan assignment? Lihat kode berikut ini dan perhatikan bedanya.
+      </p>
+      <img src="images/3.png" alt="" class="img-code" />
+
+      <p>
+        Kita bisa melihat bahwa kita meletakkan tanda <b>++</b> didepan variable <b>a.</b> Kode ini akan menghasilkan nilai 2 untuk variable b seperti yang kita inginkan. Dengan demikian, kita harus berhati-hati bahwa kode <b>a++</b> dan
+        <b>++a</b> akan mempunyai perilaku yang berbeda dalam program yang kita buat. Hal yang sama berlaku juga untuk proses decrement.
+      </p>
+      <h2>Variable bertipe karakter atau string</h2>
+      <p>Untuk variable bertipe karakter dan string, kita bisa melakukan operasi penyambungan string (concatenation) dengan menggunakan simbol <b>+</b> yang akan menghasilkan string baru hasil dari proses penyambungan tersebut.</p>
+      <p>Contoh:</p>
+      <pre><code>String s = “Koding” + “ “ + “Java”;</code></pre>
+      <p>String s sama dengan di dalam dua tanda kutip Koding, plus, di dalam dua tanda kutip spasi, plus di dalam dua tanda kutip Java.</p>
+      <pre><code>System.out.println(s);</code></pre>
+      <p>Lalu jika kita ingin mencetak variable s maka kita gunakan system dot out dot print line variable s</p>
+      <p>Selain proses penyambungan string (concatetation), Java juga menyediakan banyak fungsi-fungsi untuk melakukan pemrosesan terhadap suatu string seperti memecah string (substring), mencari suatu character di dalam string, dll.</p>
+      <h2>Variable bertipe Boolean</h2>
+      <p>
+        Boolean adalah suatu data yang hanya mengenal 2 value yaitu <b>true</b> (benar) atau <b>false</b> (salah). Lalu apa fungsi dari Boolean ini? Kita bisa menggunakan variable boolean ini untuk menyimpan hasil pengujian suatu pernyataan
+        apakah kondisi tersebut benar atau salah.
+      </p>
+      <p>Contoh:</p>
+      <img src="images/5.png" alt="" class="img-code" />
+      <p>
+        instruksi ini akan menghasilkan nilai variable <b>b1</b> sama dengan <b>true</b> karena <b>‘5 < 6’</b> adalah suatu pernyataan yang benar. Demikian juga sebaliknya jika pernyataan tersebut salah seperti pada variable <b>b2</b> yang
+        akan menghasilkan nilai <b>false.</b> Selain kurang dari dengan simbol <b><</b> dan lebih dari dengan simbol <b>>,</b> ada juga simbol lain yaitu, <b><=</b> yang berarti kurang dari atau sama dengan dan simbol <b>>= </b>yang berarti
+        lebih dari atau sama dengan. Kita juga bisa melakukan pengujian apakah suatu variable sama dengan (<b>equal</b>) suatu nilai dengan menggunakan simbol <b>==</b> (dua tanda sama dengan) atau menguji suatu variable tidak sama (<b
+          >not equal</b
+        >) dengan dengan mengunakan symbol <b>!=</b> (tanda seru dan sama dengan).
+      </p>
+      <p>Berikut ini contoh penggunaan simbol-simbol tersebut:</p>
+      <img src="images/6.png" alt="" class="img-code" />
+      <p>
+        Variable b1 membandingkan variable a apakah lebih kecil sama dengan lima. Lalu Variable b2 membandingkan variable a apakah lebih besar sama dengan delapan. Selanjutnya variable b3 membandingan variable a apakah sama dengan variable
+        b. Dan variable b4 membandingkan variable a apakah tidak sama dengan variable b.
+      </p>
+      <p>
+        Untuk variable bertipe boolean ini, kita bisa melakukan beberapa operasi seperti <b>negasi</b> dan penggabungan dengan menggunakan operasi AND, OR atau XOR. <b>Negasi</b> adalah operasi untuk membalik nilai dari
+        <b>true menjadi false</b> atau sebaliknya dari <b>false menjadi true.</b> Operasi yang digunakan untuk melakukan negasi ini direpresentasikan dengan symbol <b>!</b> (tanda seru) seperti contoh berikut ini:
+      </p>
+      <img src="images/7.png" alt="" class="img-code" />
+      <p>Variable b1 bernilai false dan kita melakukan operasi <b>negasi</b> terhadap varaible b1 sehingga nilai b2 adalah true.</p>
+
+      <p>
+        Selain negasi, kita bisa menggabungkan beberapa kondisi dengan menggunakan operasi pada tipe data boolean yaitu operasi <b>AND (dan)</b> yang direpresentasikan dengan symbol <b>&&</b> dan <b>OR (atau) </b>yang direpresentasikan
+        dengan simbol <b>||</b>. Saat melakukan operasi <b>AND</b>, statement akan dianggap benar jika kedua pernyataan adalah benar (true). Perhatikan contoh berikut ini:
+      </p>
+      <img src="images/8.png" alt="" class="img-code" />
+      <p>
+        Pernyataan pertama <b>‘5 < 6’</b> adalah benar , dan <b>(true)</b>pernyataan kedua adalah <b>‘6 < 8’</b> juga benar <b>(true).</b> Karena kedua pernyataan tersebut benar dan kita menggabungkan kedua pernyataan tersebut dengan simbol
+        <b>&& (AND),</b> maka keseluruhan pernyataan tersebut adalah benar dan variable <b>b1</b> akan bernilai true.
+      </p>
+      <p>Perhatikan tabel untuk operasi AND berikut ini:</p>
+      <table width="50%">
+        <tr>
+          <th>AND</th>
+          <th>True</th>
+          <th>False</th>
+        </tr>
+        <tr>
+          <td>True</td>
+          <td>True</td>
+          <td>False</td>
+        </tr>
+        <tr>
+          <td>False</td>
+          <td>False</td>
+          <td>False</td>
+        </tr>
+      </table>
+      <p>
+        True AND True sama dengan True. Jika salah satu pernyataan False (salah), maka hasilnya adalah False. Sehingga True AND False sama dengan False, dan False AND True sama dengan False. Lalu untuk False AND False hasilnnya tetap False
+      </p>
+
+      <p>Selain AND (dan), ada juga operasi OR (atau) yang direpresentasikan dengan simbol ||. Perhatikan tabel untuk operasi OR berikut ini:</p>
+      <table width="50%">
+        <tr>
+          <th>AND</th>
+          <th>True</th>
+          <th>False</th>
+        </tr>
+        <tr>
+          <td>True</td>
+          <td>True</td>
+          <td>True</td>
+        </tr>
+        <tr>
+          <td>False</td>
+          <td>true</td>
+          <td>False</td>
+        </tr>
+      </table>
+      <p>
+        Operasi OR (atau) akan menghasilkan nilai true jika salah satu pernyataan benar. True OR False sama dengan True, dan False OR True sama dengan True. Jika kedua pernyataan false (salah), maka hasilnya adalah false, sama halnya jika
+        kedua pernyataan True maka hasilnya adalah True. Untuk lebih memahami Operasi OR ini, perhatikan contoh berikut:
+      </p>
+      <img src="images/8.png" alt="" class="img-code" />
+      <p>
+        Pernyataan pertama <b>‘5 < 6’</b> adalah benar <b>(true)</b>, dan pernyataan kedua <b>‘6 > 8’</b> adalah salah <b>(false)</b>. Karena salah satu dari pernyataan tersebut benar, dan kita menggabungkan kedua pernyataan tersebut dengan
+        simbol <b>|| (OR)</b>, maka keseluruhan pernyataan tersebut adalah benar dan variable b1 akan bernilai <b>true.</b>
+      </p>
+      <p>
+        Selain <b>AND</b> dan <b>OR,</b> ada juga suatu operasi Boolean yaitu <b>XOR (exclusive OR)</b>. Perbedaan <b>XOR</b> dan <b>OR</b> adalah jika kedua pernyataan benar, maka hasilnya justru <b>false.</b> Di Java,
+        <b>XOR</b> direpresentasikan dengan symbol <b>^</b>. Lihat contoh berikut ini:
+      </p>
+      <img src="images/8.png" alt="" class="img-code" />
+      <p>Variable <b>b1</b> akan bernilai <b>false</b>, karena kedua pernyataan adalah <b>true</b>. Lihat table <b>XOR</b> berikut ini:</p>
+
+      <table width="50%">
+        <tr>
+          <th>AND</th>
+          <th>True</th>
+          <th>False</th>
+        </tr>
+        <tr>
+          <td>true</td>
+          <td>False</td>
+          <td>True</td>
+        </tr>
+        <tr>
+          <td>False</td>
+          <td>True</td>
+          <td>False</td>
+        </tr>
+      </table>
+      <p>Operasi XOR (Exclusive OR) akan menghasilkan nilai false jika kedua pernyataan true, begitu pula jika kedua pernyataan false maka hasilnya pun tetap false. Namun jika salah satu pernyataan benar akan menghasilkan nilai True.</p>
+
+      <h2>Variable Scope</h2>
+      <p>
+        <b>Variable Scope</b> (scope dari suatu variable) adalah suatu area di mana suatu variable bisa kita akses atau gunakan. Di Java, kita bisa mendeklarasikan suatu variable di dalam sebuah block dan variable tersebut hanya bisa
+        digunakan di dalam block tersebut saja, sehingga scope dari variable tersebut hanya di dalam block tersebut saja. Perhatikan code berikut ini:
+      </p>
+      <img src="images/9.png" alt="" class="img-code" />
+      <p>
+        Variable b dideklarasikan di dalam block yang dibatasi kurung kurawal di baris 6 dan 10. Oleh karena itu, statement di baris ke-12 menghasilkan kesalahan karena variable b hanya bisa diakses di dalam block tersebut seperti statement
+        di baris ke-9. Sedangkan variable a bisa diakses di dalam block karena block di baris 6 hingga 10 tersebut adalah bagian dari block yang lebih besar yaitu block di baris 4 hingga 13.
+      </p>
+    </article>
+
+    <footer>&copy; 2024 Koding Java untuk Pemula</footer>
+  </body>
+</html>
