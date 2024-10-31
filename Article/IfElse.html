@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Koding Java untuk Pemula-If Then Else</title>
+    <!-- <link rel="stylesheet" href="style1.css" /> -->
+  </head>
+  <body>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 20px;
+      }
+
+      header {
+        position: relative;
+        background-color: #ca620f;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        /* background-image: url('images/cover.jpg'); Tambah gambar cover
+    background-size: 1225px 400px;
+    background-repeat: no-repeat; */
+        height: 300px; /* Atur tinggi header sesuai kebutuhan */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden;
+      }
+
+      article {
+        background-color: white;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        font-size: 37px;
+      }
+
+      h2 {
+        color: #4caf50;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 5px;
+        font-size: 24px;
+      }
+
+      h3 {
+        color: #4caf50;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        font-size: 22px;
+      }
+
+      p {
+        line-height: 1.6;
+        margin-bottom: 15px;
+        font-size: 18px;
+      }
+
+      ul {
+        line-height: 1.6;
+        margin-bottom: 15px;
+        padding-left: 20px;
+        font-size: 16px;
+      }
+
+      ol {
+        line-height: 1.6;
+        margin-bottom: 15px;
+        font-size: 17px;
+      }
+
+      span {
+        color: #ca620f;
+      }
+
+      code {
+        background-color: #f4f4f4;
+        padding: 2px 5px;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 16px;
+      }
+
+      pre {
+        background-color: #f4f4f4;
+        padding: 10px;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+
+      .img-code {
+        max-width: 100%;
+        height: auto;
+        margin: 20px 0;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 20px;
+        color: #777;
+      }
+    </style>
+    <header>
+      <img src="images/logo.png" alt="Logo" class="logo" />
+      <h1>
+        Koding Java untuk Pemula <br />
+        4. If Then Else
+      </h1>
+    </header>
+
+    <article>
+      <h2>Halo teman-teman</h2>
+      <p>
+        Pada pembahasan sebelumnya, kita sudah membahas mengenai variable dan penggunaannya di dalam bahasa pemograman (koding). Nah, seperti kita ketahui dari contoh-contoh program sebelumnya, instruksi-instruksi dalam bahasa pemrograman
+        dieksekusi secara terurut dari atas ke bawah. Akan tetapi, ada kalanya kita ingin membuat program yang harus dieksekusi berdasarkan kondisi yang sudah kita tentukan sebelumnya.
+      </p>
+
+      <p>
+        Misalkan kita ingin menambah variable dengan nilai 5, jika variable tersebut lebih besar dari 100, dan kita akan menambah variable tersebut dengan nilai 10 jika nilai variable tesebut <b>TIDAK</b> lebih besar dari 100. Untuk bisa
+        membuat program seperti itu, kita membutuhkan suatu fitur yang disebut percabangan dan yang lebih dikenal dengan istilah <b>if-then-else.</b> Struktur dari <b>if-then-else</b> adalah:
+      </p>
+      <p><b>if</b> kondisi <b>then</b> {block-then} <b>else</b> {block-else}</p>
+
+      <p>Statement di dalam <b>block-then</b> akan dieksekusi jika kondisi bernilai <b>true</b>, sedangkan statement di dalam <b>block-else</b> akan dieksekusi saat kondisi bernilai <b>false.</b></p>
+      <p>Lihat contoh <b>if-then-else</b> di program Java berikut ini:</p>
+      <img src="images/11.png" alt="" class="img-code" />
+      <p>
+        Pada baris ke 4, karena a bernilai 5, maka kondisi a == 5 akan menghasilkan nilai true dan yang akan dieksekusi adalah statement di antara kurung kurawal di baris ke 5 dan baris ke 7 <b>(block-then)</b>. Jika kita mengganti nilai a
+        dengan angka 6 seperti contoh berikut ini:
+      </p>
+      <img src="images/22.png" alt="" class="img-code" />
+
+      <p>maka yang akan dieksekusi adalah statement di antara kurung kurawal di baris ke 9 dan baris ke 11 <b>(block-else),</b> karena kondisi di baris ke-4 menghasilkan nilai <b>false.</b></p>
+
+      <p>Kondisi tersebut bisa saja cukup kompleks dan merupakan gabungan dari beberapa pernyataan yang dirangkai dengan menggunakan AND atau OR seperti contoh berikut ini:</p>
+      <img src="images/33.png" alt="" class="img-code" />
+
+      <p>Kita bisa menggunakan statement <b>if-then-else</b> di dalam suatu block seperti contoh berikut ini:</p>
+      <img src="images/44.png" alt="" class="img-code" />
+
+      <p>
+        Kita lihat bahwa di code ini, kita menuliskan statement if di dalam if baik itu di block then maupun block else. Code di atas akan melakukan pengecekan kondisi di baris ke-7, bisa true, akan dilakukan pengecekan kondisi di baris
+        ke-8 di mana jika true akan mengeksekusi statement di baris ke-9 dan jika salah akan mengeksekusi statement di baris ke-12. Sementara itu, jika pengecekan kondisi di baris ke-7 menghasilkan false, maka akan dilakukan pengecekan
+        kondisi di baris ke-16. Jika hasilnya true, maka akan mengeksekusi baris ke-17 dan jika false maka akan mengeksekusi baris ke-20.
+      </p>
+      <p>Selain menuliskan statement if di dalam block if, kita juga bisa merangkai suatu <b>if-then-else</b> secara langsung untuk melakukan pengecekan lain jika kondisi salah dengan code berikut:</p>
+      <img src="images/55.png" alt="" class="img-code" />
+
+      <p>
+        Di code ini, jika a lebih besar sama dengan 0 (bilangan positif), maka baris ke-8 akan dieksekusi. Akan tetapi jika a adalah bilangan negatif, maka akan dilakukan pengecekan terhadap bilangan b di baris ke-10. Jika b adalah bilangan
+        positif, maka akan dieksekusi baris ke-11 dan jika salah, maka akan dieksekusi baris ke-14.
+      </p>
+    </article>
+
+    <footer>&copy; 2024 Koding Java untuk Pemula</footer>
+  </body>
+</html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Koding Java untuk Pemula-Variable Part 1</title>
+    <!-- <link rel="stylesheet" href="style1.css" /> -->
+  </head>
+  <body>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 20px;
+      }
+
+      header {
+        position: relative;
+        background-color: #ca620f;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        /* background-image: url('images/cover.jpg'); Tambah gambar cover
+    background-size: 1225px 400px;
+    background-repeat: no-repeat; */
+        height: 300px; /* Atur tinggi header sesuai kebutuhan */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden;
+      }
+
+      article {
+        background-color: white;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        font-size: 37px;
+      }
+
+      h2 {
+        color: #4caf50;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 5px;
+        font-size: 24px;
+      }
+
+      h3 {
+        color: #4caf50;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        font-size: 22px;
+      }
+
+      p {
+        line-height: 1.6;
+        margin-bottom: 15px;
+        font-size: 18px;
+      }
+
+      ul {
+        line-height: 1.6;
+        margin-bottom: 15px;
+        padding-left: 20px;
+        font-size: 17px;
+      }
+
+      ol {
+        line-height: 1.6;
+        margin-bottom: 15px;
+        font-size: 17px;
+      }
+
+      span {
+        /* color: #ca620f; */
+        color: #6ab04c;
+      }
+
+      code {
+        background-color: #f4f4f4;
+        padding: 2px 5px;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 16px;
+      }
+
+      pre {
+        background-color: #f4f4f4;
+        padding: 10px;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+
+      .img-fluid {
+        max-width: 60%;
+        height: auto;
+        margin: 20px 0;
+        border-radius: 7%;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 20px;
+        color: #777;
+      }
+    </style>
+    <header>
+      <img src="images/logo.png" alt="Logo" class="logo" />
+      <h1>Koding Java untuk Pemula <br> 2. Variable-Part 1</h1>
+   
+    </header>
+
+    <article>
+      <h2>Halo teman-teman</h2>
+      <p>
+        Pada kesempatan ini kita akan membahas tentang <b>Variable</b>
+      </p>
+     
+      <h2>Apa itu variable?
+    </h2>
+      <p>
+        Dalam coding atau pemrograman, variable adalah suatu tempat yang kita gunakan untuk <b>menyimpan suatu 
+          data atau nilai</b>. Dalam pemrograman, variable terdiri dari 3 komponen yaitu:
+
+      </p>
+
+      <ul>
+        <li>Nama</li>
+        <li>Tipe Data</li>
+        <li>Nilai/Value</li>
+      </ul>
+
+      <p>Di bahasa pemrograman Java, untuk menggunakan variable ini, kita harus membuat variable tersebut terlebih 
+        dahulu. Proses pembuatan variable disebut <b>deklarasi variable (variable declaration)</b>.
+    </p>
+
+    <p>Di bahasa pemrograman Java, pada saat mendeklarasikan variable kita harus menentukan <b>nama</b> dan <b>tipe</b> dari variable tersebut.
+    </p>
+    <p>Contoh:</p>
+
+    <pre><code> <b>int</b> var1; </code></pre>   
+    
+      <p>
+        Kita mendeklarasikan variable dengan <b>nama var1</b> dengan <b>tipe int. int</b> singkatan dari <b>integer</b> yang berarti 
+        bilangan bulat. Setelah deklarasi, kita bisa menentukan nilai dari variable var1 dengan cara:
+      </p>
+
+      <pre><code> var1=5; <span>  //var1 sama dengan 5</span></code></pre> 
+      
+
+      <p>Menentukan nilai dari suatu variable disebut <b>variable assignment</b> dan menggunakan <b>tanda sama dengan (=)</b>.</p>
+      <p>Kita juga bisa langsung mendeklarasikan variable dan langsung menentukan nilai dari variable tersebut dengan cara:</p>
+      
+      <pre><code> <b>int</b> var1=5;<span>  //integer var1 sama dengan 5</span></code></pre> 
+      
+      
+
+      <h2>Nama Variable
+    </h2>
+      <p>
+        Kita menggunakan nama <b>var1</b> untuk variable pertama kita. Nah mungkin akan muncul pertanyaan, apakah kita bisa
+         memberikan nama variable sesuka hati kita?
+      </p>
+
+      <p>Kita bisa menggunakan nama variable apapun asalkan tidak melanggar beberapa aturan berikut:</p>
+
+      <ul>
+        <li>Nama variable hanya boleh terdiri dari huruf (baik huruf besar maupun huruf kecil), angka, 
+            tanda $ (dolar) dan tanda _ (underscore/garis bawah).</li>
+        <li>Nama variable <b>tidak boleh</b> diawali dengan angka.</li>
+        <li>Nama variable tidak boleh sama dengan <b>keywords</b>. Apa itu <b>keywords? Keywords</b> adalah kata-kata yang 
+            digunakan di dalam bahasa pemrograman dan sudah memiliki fungsi atau konteksnya sendiri, seperti int, 
+            double, if, else, for, dll. Jadi kita <b>tidak boleh</b> menggunakan int, double, if, else, for, dll untuk 
+            nama variable kita.
+        </li>
+      </ul>
+
+      <p>Selain ketiga aturan wajib di atas, di komunitas programmer Java juga muncul beberapa ketentuan yang 
+        diikuti oleh mayoritas programmer Java untuk pemberian nama variable ataupun nama lain yang disebut Naming
+         Convention. <b>Naming Convention</b> di Java antara lain:
+    </p>
+
+    <ul>
+        <li>Nama variable diawali dengan huruf kecil.</li>
+        <li>Nama variable yang terdiri dari dua kata atau lebih ditulis menggunakan <b>camel system</b>.
+        </li>
+    </ul>
+    <h3>Apa itu <b>camel system?</b>
+    </h3>
+
+    <p>Seperti kita ketahui, <b>camel</b> atau <b>unta</b> mempunyai punuk yang membentuk kurva naik turun. Nah dalam konteks 
+        bahasa pemrograman, <b>camel system</b> adalah cara penulisan kata dengan menggunakan huruf kecil dan membuat 
+        setiap kata diawali dengan huruf besar. Dengan penulisan seperti ini, maka rangkaian kata-kata tersebut 
+        akan lebih mudah dibaca.
+    </p>
+    <p>Contoh camel system: <b>IniAdalahCamelSystem</b></p>
+    <p>Jika kita mengikuti aturan penamaan variable yang diawali dengan huruf kecil, maka huruf <b>i</b> pada kata <b>ini</b> 
+        haruslah huruf kecil karena nama variable diawali dengan huruf kecil, sehingga nama variable kita menjadi:
+         <b>iniAdalahCamelSystem.</b>
+    </p>
+    <p>Perlu diingat, bahwa di banyak bahasa pemrograman termasuk Java, nama variable itu <b>case-sensitive</b>. 
+        <b>Case-sensitive</b> berarti bahwa huruf besar dan huruf kecil dianggap berbeda. Oleh karena itu, <b>var1</b> dengan
+         huruf v kecil dan <b>Var1</b> dengan huruf V besar adalah dua variable yang berbeda. Selain itu, kita tidak 
+         diperbolehkan untuk mendeklarasikan variable dengan nama yang sama lebih dari satu kali. Contohnya :
+    </p>
+
+  <pre><code><b> int</b> var1=5;
+<b> int</b> var1=8;  <span>//integer var1 sama dengan 5, dan integer var1 sama dengan 8</span></code></pre> 
+   
+    <p>Kode program di atas akan menghasilkan kesalahan atau error.</p>
+
+    <h2>Tipe Data</h2>
+    <p>Tipe data dari suatu variable menentukan jenis atau tipe dari nilai yang bisa kita simpan atau assign ke 
+        suatu variable. Jadi pada contoh di atas, variable <b>var1</b> hanya bisa kita assign nilai yang bertipe int atau 
+        bilangan bulat. Nah mungkin akan muncul pertanyaan, apakah kita hanya bisa membuat variable dengan tipe 
+        bilangan bulat? Jawabannya adalah <b>TIDAK.</b>
+    </p>
+    <p>
+        Dalam bahasa pemrograman, terdapat beberapa tipe data yang umum bisa kita gunakan dan dapat dikelompokan
+         menjadi 3 kategori, yaitu:
+    </p>
+    <ul>
+        <li>
+           Bilangan <br>
+           Bilangan bisa berupa bilangan bulat ataupun desimal.
+        
+        </li>
+        <li>
+           Karakter dan String <br>
+           Karakter (bahasa Inggris <b><i>Character</i></b>) adalah suatu simbol yang kita gunakan dalam bahasa tertulis dan 
+            dapat berupa huruf, angka, tanda baca, dolar, dll. Sedangkan <b>string</b> adalah deretan dari karakter yang 
+            bisa membentuk kata, kalimat ataupun sekedar deretan simbol yang tidak mempunyai arti.
+      
+        </li>
+        <li>
+           Boolean <br>
+           Boolean adalah sebuah tipe data yang hanya mempunyai 2 kemungkinan nilai yaitu <b>true</b> (benar) atau <b>false</b> (salah).
+        </li>
+    </ul>
+    <p>Di Java, bilangan, karakter dan boolean termasuk tipe data sederhana atau primitif yang hanya bisa 
+        menyimpan satu nilai saja, sedangkan string diperlakukan sebagai <b>object</b>. Object termasuk tipe data 
+        kompleks yang bisa menyimpan banyak nilai. Kita akan membahas <b>konsep object</b> ini pada topik selanjutnya, 
+        oleh karena itu, ikuti terus tutorial kami.
+    </p>
+    <p>Selain menjadikan bilangan sebagai tipe primitif, Java membagi lagi bilangan menjadi beberapa tipe. 
+        Berikut ini tipe data primitif yang ada di Java:
+    </p>
+  
+    <ul>
+        <li>int <br>
+            Int adalah bilangan bulat yang nilainya antara -231 (minus dua pangkat tiga puluh satu ) hingga 231-1
+             (dua pangkat tiga puluh satu minus satu) <br>
+           Contoh deklarasi variable dengan tipe int:</p> 
+           <pre><code> <b>int</b> var1 = 12345;  <span>// integer var1 sama dengan satu dua tiga empat lima</span></code></pre> 
+        </p> 
+        </li>
+        <li>byte <br>
+            Byte adalah bilangan bulat yang nilainya antara -128 (minus seratus dua puluh delapan)  hingga 127 
+                (seratus dua puluh tujuh)
+            
+            <p>Contoh deklarasi variable dengan tipe byte:</p>
+            <pre><code> <b>byte</b> var2 = 1;  <span>//byte var2 sama dengan satu</span></code></pre>
+           
+        </li>
+        <li>short <br>
+            Short adalah bilangan bulat yang nilainya antara -32768 (minus tiga puluh dua ribu tujuh ratus enam puluh 
+                delapan)  hingga 32767 ( tiga puluh dua ribu tujuh ratus enam puluh tujuh)
+                <br>
+            Contoh deklarasi variable dengan tipe short: <br>
+            <pre><code> <b>short</b> var3 = -100;  <span>//short var3 sama dengan minus seratus</span></code></pre>
+        </li>
+        <li>long
+            <br>
+           Long adalah bilangan bulat yang nilainya antara -263 (minus dua pangkat enam puluh tiga) hingga 263-1 
+                (dua pangkat enam puluh tiga minus 1)
+          <br>
+            Contoh deklarasi variable dengan tipe long: <br>
+          
+            <pre><code> <b>long</b> var4 = 12345678;  <span>//long var4 sama dengan 1, 2, 3, 4, 5, 6, 7, 8</span></code></pre>
+          
+        </li>
+        <li>float 
+          <br>
+            Float adalah bilangan decimal 32-bit (bit adalah singkatan dari binary digit atau bilangan biner, 
+                merupakan bilangan yang hanya terdiri dari deretan angka 1 dan 0. 32-bit berarti deretan angka 1 
+                dan 0 tersebut maximum 32 digit).
+            <br>
+            Contoh deklarasi variable dengan tipe float: <br>
+            <pre><code> <b>float</b> var5 = 1.2345;  <span>//float var5 sama dengan 1 titik 2, 3, 4, 5</span></code></pre>
+           
+        </li>
+        <li>double <br>
+            Double adalah bilangan desimal 64-bit, yang bisa memuat nilai lebih besar dibandingkan float.
+           <br>Contoh deklarasi variable dengan tipe double:
+            <pre><code> <b>double</b> var6 = 12345.6789;  <span>//double var6 sama dengan 12345 ttik 6789</span></code></pre>
+
+        </li>
+        <li>char <br>
+            Char adalah karakter yang dituliskan di dalam petik tunggal 
+            <br>Contoh deklarasi variable dengan tipe char:
+            <pre><code> <b>char</b> var7 = ‘a’;  <span>//char var7 sama dengan dalam petik tunggal a</span></code></pre>
+           
+        </li>
+        <li>boolean <br>
+            Boolean adalah tipe variable yang hanya mempunyai 2 nilai yaitu true (benar) atau false (salah).
+            <br>Contoh deklarasi variable dengan tipe boolean:
+            <pre><code> <b> boolean</b> var8 = true;  <span>//Boolean var8 sama dengan true</span>
+   <b>boolean</b> var9 = false;  <span>//Boolean var9 sama dengan false</span></code></pre>
+
+        </li>
+    </ul>
+
+    <p>Selain tipe data sederhana, terdapat juga tipe data <b>kompleks</b> yang bisa menyimpan banyak nilai di dalam 
+        sebuah variable seperti <b>array</b> dan <b>object.</b> Kita akan membahas <b>array</b> dan <b>object</b> di topic selanjutnya. 
+        Oleh karena itu, ikutilah terus tutorial kami.
+    </p>
+    
+    </article>
+
+    <footer>&copy; 2024 Koding Java untuk Pemula</footer>
+  </body>
+</html>
